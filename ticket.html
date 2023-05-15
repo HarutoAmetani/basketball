@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>チケット|B.LEAGUE（Bリーグ）公式サイト</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!--ヘッダー-->
+<header class="header">
+
+	<h1><a href="index.html"><img src="images/b-league.png" alt="Bリーグ" width=10% height=10%></a></h1>
+	
+	<nav class="nav1">
+		<ul>
+			<li><a href="day.html">日程・結果</a></li>
+			<li><a href="rank.html">順位・成績</a></li>
+		</ul>
+	</nav>
+	
+	<nav class="nav2">
+		<ul>
+			<li><a href="event.html">イベント・特集</a></li>
+			<li><a href="ticket.html">チケット</a></li>
+		</ul>
+	</nav>
+	
+</header>
+<!--ヘッダーここまで-->
+
+<div class="visual2">
+	<img src="images/ticket.webp" alt="チケット" width=1400px height=200px>
+	<p>チケット</p>
+</div>
+
+<!--メイン-->
+<main class="main5">
+	<h2>チケット販売</h2>
+	<form method="GET" action="result.html">
+		<div>
+			<label for="kind">チケット選択</label><br>
+			<select id="kind" name="kind">
+				<option value="b.league">B.LEAGUE</option>
+				<option value="allstargame">B.LEAGUE ALLSTARGAME2023</option>
+				<option value="tennnou">天皇杯</option>
+			</select>
+		</div>
+		<div>
+			クラブ選択<br>
+			<label><input type="radio" name="first" value="B1" checked>B1</label>
+			<label><input type="radio" name="first" value="B2">B2</label>
+			<label><input type="radio" name="first" value="B3">B3</label>
+		</div>
+		<div>
+			日程<br>
+			<label><input type="checkbox" name="day" value="2/1">2/1</label>
+			<label><input type="checkbox" name="day" value="2/2">2/2</label>
+			<label><input type="checkbox" name="day" value="2/3">2/3</label>
+		</div>
+		<div>
+			<label>備考<br>
+			<textarea name="bikou"></textarea></label>
+		</div>
+		<div>
+			<input type="submit" name="submit" value="送信">
+		</div>
+	</form>
+</main>
+<!--メインここまで-->
+
+<!--フッター-->
+<footer class="footer">
+	<p>&copy;Copyright basketball. All right reserved.</p>
+</footer>
+<!--フッターここまで-->
+
+</body>
+</html>
